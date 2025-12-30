@@ -1,0 +1,6 @@
+/public/
+/resources/_gen/
+
+# Hugo 缓存文件
+.hugo_build.lock
+.hugo_cache/
