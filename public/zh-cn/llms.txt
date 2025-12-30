@@ -1,0 +1,89 @@
+# Hugo Narrow
+
+> The documentation of Hugo Narrow.
+
+
+## 更新日志
+- [Narrow v1.2.1](http://localhost:1313/zh-cn/changelog/v1.2.1/): 本次更新添加了项目内容和两个短代码：button 和 icon。 - Published 2025-12-26
+- [Narrow v1.2.0](http://localhost:1313/zh-cn/changelog/v1.2.0/): 本次更新优化了大量内容，更新后推荐重新检查 Hugo 配置。 - Published 2025-12-24
+- [Narrow v1.1.6](http://localhost:1313/zh-cn/changelog/v1.1.6/): 本次更新首页内容添加自定义模板。 - Published 2025-11-16
+- [Narrow v1.1.5](http://localhost:1313/zh-cn/changelog/v1.1.5/): 本次更新添加了 dock 显示模式参数，优化部分样式。 - Published 2025-09-05
+- [Narrow v1.1.4](http://localhost:1313/zh-cn/changelog/v1.1.4/): 本次更新添加了语言切换选项参数。 - Published 2025-08-22
+- [Narrow v1.1.3](http://localhost:1313/zh-cn/changelog/v1.1.3/): 本次更新优化了部分样式和功能，添加了模板和短代码。 - Published 2025-08-06
+- [Narrow v1.1.2](http://localhost:1313/zh-cn/changelog/v1.1.2/): 本次更新优化了文章版权信息参数。 - Published 2025-07-02
+- [Narrow v1.1.1](http://localhost:1313/zh-cn/changelog/v1.1.1/): 本次更新解决图库相关参数问题。 - Published 2025-06-25
+- [Narrow v1.1.0](http://localhost:1313/zh-cn/changelog/v1.1.0/): 本次更新重构了图库配置，并添加了瀑布流布局图库短代码。 - Published 2025-06-17
+- [Narrow v1.0.0](http://localhost:1313/zh-cn/changelog/v1.0.0/): 本次更新添加了图库功能，同时文章封面会生成展位图，SEO 数据由 Hugo 内置模板生成。 - Published 2025-06-14
+
+## 文档
+- [概述](http://localhost:1313/zh-cn/docs/overview/): 👋 你好，欢迎访问 Hugo Narrow 主题文档。
+Hugo Narrow 是一个简洁的现代化 Hugo 主题，适用于个人博客，基于 Tailwind CSS 4.0 构建，内置多种配色方案，支持 …
+
+### 快速开始
+- [Hugo 模块](http://localhost:1313/zh-cn/docs/quickstart/hugo-mod/): 安装要求 在开始之前，你需要安装以下软件：
+Hugo 扩展版 且版本大于等于 0.146。 Git Go 步骤 初始化新的站点 hugo new site my-site --format=yaml  …
+- [Git 子模块](http://localhost:1313/zh-cn/docs/quickstart/git-submodule/): 安装要求 在开始之前，你需要安装以下软件：
+Hugo 扩展版 且版本大于等于 0.146。 Git 步骤 初始化新的站点 hugo new site my-site --format=yaml …
+
+### 内容管理
+- [组织文件](http://localhost:1313/zh-cn/docs/content-management/organize-files/): 文件结构 文件的组织结构会决定最终站点输出结构。Hugo 会索引 content 目录下的所有 markdown 文件。
+页面包 一般比较难区分的是 index.md 和 _index.md 文件。
+- [本地资源](http://localhost:1313/zh-cn/docs/content-management/local-resources/): Hugo Narrow 支持多种方式引入本地资源如图像：
+页面资源（markdown 文件所在目录下） 全局资源（assets 目录下） 静态资源（static 目录下） Tip
+- [内容模板](http://localhost:1313/zh-cn/docs/content-management/archetypes/): Archetypes 是新内容的模板，通常位于 ~/archetypes 文件夹下，由元数据（frontmatter）和标记内容（markup）组成，元数据可以使用 TOML、YAML、JSON。
+- [头信息](http://localhost:1313/zh-cn/docs/content-management/frontmatter/): Frontmatter 是每个 Markdown 文件开头的 YAML 格式配置部分，使用两个 --- 包裹内容（数据格式不同，包裹的符号不同，推荐使用 YAML），用于设置文章的元数据和特定功能，在 …
+- [Markdown](http://localhost:1313/zh-cn/docs/content-management/markdown/): Hugo Narrow 支持使用 Hugo 默认的渲染引擎 Goldmark，默认禁用上标和下标，如果你需要启用，可以根据 Hugo 文档 更改相应的配置。
+GitHub Alert Hugo …
+
+### 站点配置
+- [基础配置](http://localhost:1313/zh-cn/docs/configurations/basic-config/): Hugo 配置文件格式支持：hugo.toml、hugo.yaml、hugo.json，并按照上述顺序索引，支持根据环境、根配置键、语言拆分单个配置文件。
+- [导航菜单](http://localhost:1313/zh-cn/docs/configurations/menus/): Hugo Narrow 支持三处导航菜单：
+顶部菜单（main） 页脚菜单（footer） 社交链接菜单（social） 其中 icon 为标题前图标，使用 SVG 格式， …
+- [多语言](http://localhost:1313/zh-cn/docs/configurations/multilingual/): Hugo Narrow 支持创建多语言站点，在导航栏通过按钮切换显示。
+目前 Hugo Narrow 支持如下语言：
+ar：阿拉伯语 de：德语 en：英语 es：西班牙语 fr：法语 it： …
+
+### 特色配置
+- [SEO](http://localhost:1313/zh-cn/docs/features/seo/): SEO 配置用于搜索引擎优化，站点 favicon 使用 SVG 格式。
+params.yaml# Basic site info with SEO description: &#34;A …
+- [首页](http://localhost:1313/zh-cn/docs/features/home/): 首页支持设置最近文章数量和首页模块顺序，并可以添加自定义模块。
+在 layouts/_partials/home/ 目录创建模板文件。 在 contentOrder 列表添加模板文件名，首页各部分内容 …
+- [作者](http://localhost:1313/zh-cn/docs/features/author/): Hugo Narrow 作者信息位于首页，示例配置中 avatar 文件放置在 ~/static/ 目录，icon 值使用 ~/assets/icons/ 目录下文件名。 …
+- [页首](http://localhost:1313/zh-cn/docs/features/header/): Hugo Narrow 页首设置支持粘性导航设置、logo 设置、主题切换、暗色模式切换、语言切换。
+logo 放置在 ~/static 目录下，留空则使用站点标题首字母，并根据主题配色显示不同颜色。 …
+- [Dock](http://localhost:1313/zh-cn/docs/features/dock/): Hugo Narrow 通过 Dock 展示常用功能按钮，包括返回顶部、返回上一页、跳转评论、搜索、目录。
+Dock 有三种不同的模式：
+scroll： 向上滚动显示 always： …
+- [配色](http://localhost:1313/zh-cn/docs/features/color-schemes/): Hugo Narrow 内置多种配色，可以通过 Header 上的按钮切换，同时支持自定义配色。
+params.yamlcolorScheme: &#34;default&#34; themes: …
+- [文章](http://localhost:1313/zh-cn/docs/features/posts/): Hugo Narrow 支持设置文章版权信息、相关文章等参数。
+Tip
+文章版权相关参数可在文章 frontmatter 覆盖设置。
+- [评论](http://localhost:1313/zh-cn/docs/features/comments/): Hugo Narrow 支持多种评论系统：
+artalk disqus giscus twikoo utterances waline Tip
+- [分析](http://localhost:1313/zh-cn/docs/features/analytics/): Hugo Narrow 支持多种站点分析：
+百度分析 Clarity Google Umami params.yamlanalytics: enabled: false baidu: enabled: …
+- [公式和图表](http://localhost:1313/zh-cn/docs/features/formulas-charts/): 公式 Hugo Narrow 通过 Katex 支持公式。
+Tip
+- [代码块](http://localhost:1313/zh-cn/docs/features/codeblock/): Hugo Narrow 对代码块添加了几种常用便捷功能：
+一键复制 语言显示 代码块折叠 params.yamlcodeblock: collapse: enabled: true …
+- [图库](http://localhost:1313/zh-cn/docs/features/gallery/): Hugo Narrow 支持图片点击放大功能，使用 GLightbox 库创建灯箱，同时支持 justified 布局和 Masonry 布局。justified …
+- [其他](http://localhost:1313/zh-cn/docs/features/miscellaneous/): 本节介绍一些其他设置。
+阅读进度 params.yamlreadingProgress: enabled: true height: 3 showOnHomepage: false …
+
+### 短代码
+- [内置短代码](http://localhost:1313/zh-cn/docs/shortcodes/build-in-shortcodes/): Hugo 内置了一些短代码，包括：
+Details Figure Gist Highlight Instagram Param QR Ref Relref Vimeo X YouTube 这些短代码通 …
+- [扩展短代码](http://localhost:1313/zh-cn/docs/shortcodes/extended-shortcodes/): 使用时删除 {{ 和 }} 中间的 \
+Bilibili {\{&lt; bilibili VIDEO_ID PART_NUMBER &gt;}\} 同时支持 AV 号和 BV 号， …
+
+### 高级设置
+- [自定义主题](http://localhost:1313/zh-cn/docs/advanced/custom-theme/): Git 子模块引入主题 当你使用 git submodule 方式添加主题时，将你想要修改的主题文件复制到站点根目录相同路径，在其中定义你的修改。
+
+
+## Root Pages
+- [关于 Hugo Narrow](http://localhost:1313/zh-cn/about/): Hugo 是一款基于 Go 语言开发的静态网站生成器，以极速构建、简单易用、高度可定制为核心优势，无需数据库支持，能将标记语言（如 Markdown）格式的内容快速转换为静态 HTML 页面，广泛应用 …
+
+---
+Generated on 2025-12-30 10:51:44 UTC
+Site: http://localhost:1313/

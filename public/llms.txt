@@ -1,0 +1,82 @@
+# Hugo Narrow
+
+> The documentation of Hugo Narrow.
+
+
+## Changelog
+- [Narrow v1.2.1](http://localhost:1313/changelog/v1.2.1/): This release add a new content type for projects and two shortcodes button, icon. - Published 2025-12-26
+- [Narrow v1.2.0](http://localhost:1313/changelog/v1.2.0/): This release includes extensive optimizations. it&rsquo;s recommend reviewing and validating your … - Published 2025-12-24
+- [Narrow v1.1.6](http://localhost:1313/changelog/v1.1.6/): This release add custom content at homepage. - Published 2025-11-16
+- [Narrow v1.1.5](http://localhost:1313/changelog/v1.1.5/): This release add dock display mode parameter. - Published 2025-09-05
+- [Narrow v1.1.4](http://localhost:1313/changelog/v1.1.4/): This release add language switch mode parameters. - Published 2025-08-22
+- [Narrow v1.1.3](http://localhost:1313/changelog/v1.1.3/): This release optimize some style and improve the experience of toc, add a template and a shortcode. - Published 2025-08-06
+- [Narrow v1.1.2](http://localhost:1313/changelog/v1.1.2/): This release optimize the parameters of posts license. - Published 2025-07-02
+- [Narrow v1.1.1](http://localhost:1313/changelog/v1.1.1/): This release fix the issues of gallery configuration. - Published 2025-06-25
+- [Narrow v1.1.0](http://localhost:1313/changelog/v1.1.0/): This release refactor the configuration of gallery, add a shortcode of masonry gallery. - Published 2025-06-17
+- [Narrow v1.0.0](http://localhost:1313/changelog/v1.0.0/): This release introduces the gallery; additionally, booth maps are automatically generated for posts … - Published 2025-06-14
+
+## Documentation
+- [Overview](http://localhost:1313/docs/overview/): 👋 Hello, there! Welcome to the hugo narrow documentation.
+Hugo Narrow is a clean and modern Hugo …
+
+### Quickstart
+- [Hugo Mod](http://localhost:1313/docs/quickstart/hugo-mod/): Prerequisites You should install the following softwares before start:
+Hugo Extended , Version 0.146 …
+- [Git Submodule](http://localhost:1313/docs/quickstart/git-submodule/): Prerequisites You should install the following softwares before start:
+Hugo Extended , Version 0.146 …
+
+### Content Management
+- [Organize Files](http://localhost:1313/docs/content-management/organize-files/): Contents Structure By default, Hugo indexes all Markdown files in the content directory, and the …
+- [Local Resources](http://localhost:1313/docs/content-management/local-resources/): Hugo Narrow support import local resources such as images with three methods:
+Page Bundles (markdown …
+- [Archetypes](http://localhost:1313/docs/content-management/archetypes/): Archetypes is template for new content, located at ~/archetypes. A content file consists of …
+- [Frontmatter](http://localhost:1313/docs/content-management/frontmatter/): Frontmatter is configruation section at the beginning of markdown files, it uses two --- wrap …
+- [Markdown](http://localhost:1313/docs/content-management/markdown/): Hugo Narrow use Goldmark to render markdown files. By default, the superscript and the subscript are …
+
+### Configurations
+- [Basic](http://localhost:1313/docs/configurations/basic-config/): Hugo supports hugo.toml、hugo.yaml、hugo.json format and follow the order, supporting split …
+- [Menus](http://localhost:1313/docs/configurations/menus/): Hugo Narrow supports three menus：
+Main menu at header footer menu social menu The icon is the icon …
+- [Multilingual](http://localhost:1313/docs/configurations/multilingual/): Hugo Narrow supports the multilingual sites, with a toggle button available in the navigation bar …
+
+### Features
+- [SEO](http://localhost:1313/docs/features/seo/): SEO configuration used for Search Engine Optimization, favicon use SVG format.
+params.yaml# Basic …
+- [Home](http://localhost:1313/docs/features/home/): Hugo Narro suports set the count of recent posts of home, you can also add custom sections to home. …
+- [Author](http://localhost:1313/docs/features/author/): Hugo Narrow author information render at hoempage, in the sample configuration, the avatar file is …
+- [Header](http://localhost:1313/docs/features/header/): Hugo Narrow supports set sticky header, logo, theme switch, dark mode switch, language switch.
+logo …
+- [Dock](http://localhost:1313/docs/features/dock/): Hugo Narrow provide common function by dock, include back to top, back to previous page, jump to …
+- [Color Schemes](http://localhost:1313/docs/features/color-schemes/): Hugo Narrow build in many color schemes, you can change scheme by the button at header, custom …
+- [Posts](http://localhost:1313/docs/features/posts/): Hugo Narrow supports configure the license of posts and the related posts.
+Tip
+The parameters of …
+- [Comments](http://localhost:1313/docs/features/comments/): Hugo Narrow supports kinds of comments:
+artalk disqus giscus twikoo utterances waline Tip
+- [Analytics](http://localhost:1313/docs/features/analytics/): Hugo Narrow supports kinds of analytics engines：
+Baidu Clarity Google Umami params.yamlanalytics: …
+- [Formulas and Charts](http://localhost:1313/docs/features/formulas-charts/): Formulas Hugo Narrwo supports formulas by Katex .
+Tip
+The parameters of Katex can be covered by the …
+- [Codeblock](http://localhost:1313/docs/features/codeblock/): Hugo Narrow add kinds of functions for codeblock:
+click to copy code language display collapse …
+- [Gallery](http://localhost:1313/docs/features/gallery/): Hugo Narrow supports lightbox, use GLightbox . Also justified gallery, use lickr-justified-gallery , …
+- [Miscellaneous](http://localhost:1313/docs/features/miscellaneous/): This include some miscellaneous configurations.
+Reading Progress params.yamlreadingProgress: …
+
+### Shortcodes
+- [Build in Shortcodes](http://localhost:1313/docs/shortcodes/build-in-shortcodes/): Hugo has built in some shortcodes:
+Details Figure Gist Highlight Instagram Param QR Ref Relref Vimeo …
+- [Extended Shortcodes](http://localhost:1313/docs/shortcodes/extended-shortcodes/): Delete the \ between {{ and }}.
+Bilibili {\{&lt; bilibili VIDEO_ID PART_NUMBER &gt;}\} Support AV …
+
+### Advanced
+- [Custom Hugo Narrow](http://localhost:1313/docs/advanced/custom-theme/): Uses themes by git submodule When you add the theme using git submodule, copy the theme files you …
+
+
+## Root Pages
+- [About Hugo Narrow](http://localhost:1313/about/): Hugo is a static site generator developed based on the Go programming language, featuring blazingly …
+
+---
+Generated on 2025-12-30 10:51:44 UTC
+Site: http://localhost:1313/
