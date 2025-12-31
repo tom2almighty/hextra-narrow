@@ -17,10 +17,12 @@ Hugo Narrow supports kinds of comments:
 - [waline](https://waline.js.org/)
 
 > [!TIP]
-> The parameter of the toggle of comments can be coverd by posts frontmatter.
+> The parameter of comments can be coverd by posts frontmatter.
 >
 > ```yaml {filename="first-post.md"}
-> comments: true
+> comments:
+>   enabled: true
+>   system: "giscus"
 > ```
 
 ```yaml {filename="params.yaml"}

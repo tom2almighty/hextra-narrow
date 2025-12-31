@@ -17,10 +17,12 @@ Hugo Narrow 支持多种评论系统：
 - [waline](https://waline.js.org/)
 
 > [!TIP]
-> 评论开关可在文章 frontmatter 覆盖设置。
+> 评论参数可在文章 frontmatter 覆盖设置。
 >
 > ```yaml {filename="first-post.md"}
-> comments: true
+> comments:
+>   enabled: true
+>   system: "giscus"
 > ```
 
 ```yaml {filename="params.yaml"}
