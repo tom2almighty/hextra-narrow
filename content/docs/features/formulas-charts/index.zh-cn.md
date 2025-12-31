@@ -37,13 +37,16 @@ katex:
 Hugo Narrow 通过 [Mermaid](https://mermaid.js.org/) 支持图表。
 
 > [!TIP]
-> 图表开关参数可以在文章 frontmatter 覆盖。
+> 图表参数可以在文章 frontmatter 覆盖。
 >
 > ```yaml
-> mermaid: true
+> mermaid: 
+>   enabled: true
 > ```
 
 ```yaml{filename="params.yaml"}
 mermaid:
   enabled: true
 ```
+
+`mermaid: true` 形式也支持。

@@ -37,13 +37,16 @@ katex:
 Hugo Narrwo supports charts by [Mermaid](https://mermaid.js.org/).
 
 > [!TIP]
-> The toggle of mermaid can be covered by frontmatter of posts.
+> The parameter of mermaid can be covered by frontmatter of posts.
 >
 > ```yaml
-> mermaid: true
+> mermaid: 
+>   enabled: true
 > ```
 
 ```yaml{filename="params.yaml"}
 mermaid:
   enabled: true
 ```
+
+`mermaid: true` is also supported.
